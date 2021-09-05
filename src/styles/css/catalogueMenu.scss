@@ -1,0 +1,20 @@
+.btn-bottom-left {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  margin: 3rem;
+}
+
+.flex-container-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.flex-container-evenly {
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  margin: 1rem;
+}

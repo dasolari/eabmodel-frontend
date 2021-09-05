@@ -1,0 +1,46 @@
+.main-container {
+  display: flex;
+  margin: 1rem auto;
+  width: 90%;
+  height: 85vh;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 3px 5px 11px 3px rgba(0,0,0,0.75);
+  .details-container {
+    width: 40%;
+    .title {
+      text-align: left;
+      margin: 1rem 0 0.5rem 1rem;
+      padding-top: 0.3rem;
+      text-shadow: 1px 1px 3px #000000;
+    }
+    .detail {
+      margin: 0.6rem 0.6rem 0 1rem;
+      .detail-label {
+        text-align: left;
+        margin: 0;
+        color: gray;
+      }
+      
+      .detail-body {
+        text-align: left;
+        margin: 0;
+        padding-left: 0.5rem;
+      }
+    }
+    .customer-button-container {
+      text-align: left;
+      margin: 1rem 0.3rem auto;
+    }
+  }
+  .photo-container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .image {
+      height: 100%;
+      width: auto;
+    }
+  }
+}

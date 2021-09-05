@@ -1,0 +1,126 @@
+.requests-container {
+  margin: auto;
+  padding: 1rem;
+  border: 2px groove black;
+  border-radius: 10px;
+  width: 30vw;
+  overflow-y: scroll;
+  box-shadow: 11px 9px 19px 2px rgba(0,0,0,0.75);
+  max-height: 20vh;
+  .list {
+    margin: 0;
+    padding: 0;
+  }
+  .item {
+    margin: 0.1rem 0;
+    background-color: rgba(233, 233, 233, 0.877);
+    &:hover {
+      background-color: rgb(107, 184, 251);
+    }
+  }
+}
+
+.customer-call-title {
+  margin: 0;
+  padding: 0;
+}
+
+.customer-call-container {
+  height: 75vh;
+  width: 75%;
+  margin: 1% auto auto;
+  border: 3px inset black;
+  border-radius: 10px;
+  box-shadow: 11px 9px 19px 2px rgba(0,0,0,0.75);
+  &:hover {
+    box-shadow: 11px 9px 30px 2px rgba(0,0,0,0.75);
+  }
+  .customer-main-container {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .local-video-container {
+    height: 45%;
+    width: 45%;
+  }
+  .remote-video-container {
+    height: 45%;
+    width: 45%;
+  }
+  .customer-button-container {
+    position: absolute;
+    bottom: 1rem;
+    height: 13%;
+    width: 40%;
+    padding: 0.5rem;
+    border-radius: 10px;
+  }
+}
+
+.employee-main-container {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50vh;
+  width: 75%;
+  margin: 3% auto auto;
+  border: 3px inset black;
+  border-radius: 10px;
+  box-shadow: 11px 9px 19px 2px rgba(0,0,0,0.75);
+  &:hover {
+    box-shadow: 11px 9px 30px 2px rgba(0,0,0,0.75);
+  }
+  .employee-local-video-container {
+    height: 33vh;
+    width: 45%;
+  }
+  .employee-remote-video-container {
+    height: 33vh;
+    width: 45%;
+  }
+  .employee-button-container {
+    position: absolute;
+    bottom: 1rem;
+    height: 6%;
+    width: 40%;
+    padding: 0.5rem;
+  }
+}
+
+.go-to-tablet-screen {
+  margin: auto;
+  width: 80vw;
+  height: 80vh;
+  background-image: url('https://freepikpsd.com/media/2019/10/tablet-cartoon-png-Transparent-Images.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 380px) {
+  .customer-call-container {
+    width: 85%;
+    .customer-main-container {
+      flex-direction: column;
+      .local-video-container {
+        height: 35%;
+        width: 100%;
+      }
+      .remote-video-container {
+        height: 35%;
+        width: 100%;
+      }
+      .customer-button-container {
+        position: relative;
+        bottom: 0;
+      }
+    }
+  }
+}

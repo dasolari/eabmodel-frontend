@@ -1,0 +1,9 @@
+*.css
+*.svg
+build/*
+public/*
+docs/*
+templates/*
+src/react-app-env.d.ts
+src/serviceWorker.ts
+/node_modules/
